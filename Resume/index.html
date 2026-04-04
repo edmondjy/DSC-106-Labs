@@ -7,8 +7,50 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <h1>Resume</h1>
-    <iframe src="Edmond_s_Resume.pdf" width="100%" height="800px"></iframe>
-    <p><a href="../index.html">Back to Home</a></p>
+    <header>
+        <h1>Resume</h1>
+        <nav>
+            <a href="../index.html">Home</a> |
+            <a href="../Resume/index.html">Resume</a> |
+            <a href="../projects/index.html">Projects</a> |
+            <a href="../contact/index.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="summary">
+            <h2>Professional Summary</h2>
+            <p>Aspiring Data Analyst and UC San Diego student with experience in data visualization, Python analysis, and collaborative project work.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <article>
+                <h3>University of California, San Diego</h3>
+                <p>Bachelor of Science in Data Science</p>
+                <p><time datetime="2024-09">September 2024</time> — <time datetime="2027-03">March 2027</time></p>
+            </article>
+        </section>
+
+       
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming:</strong> Python, R, SQL</li>
+                <li><strong>Data Analysis:</strong> Pandas, NumPy, Matplotlib, Seaborn</li>
+                <li><strong>Tools:</strong> Jupyter Notebook, Git, Excel, Tableau</li>
+            </ul>
+        </section>
+
+        <section id="pdf">
+            <h2>PDF Resume</h2>
+            <iframe src="Edmond_s_Resume.pdf" width="100%" height="700px"></iframe>
+            <p><a href="Edmond_s_Resume.pdf" download>Download PDF Version</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="../index.html">Back to Home</a></p>
+    </footer>
 </body>
 </html>

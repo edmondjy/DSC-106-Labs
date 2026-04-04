@@ -1,9 +1,37 @@
-<form action="eyang435@gmail.com" method="POST" enctype="text/plain">
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email"><br>
-    <label for="subject">Subject:</label><br>
-    <input id="subject" name="subject"><br>
-    <label for="body">Body:</label><br>
-    <textarea id="body" name="body"></textarea><br>
-    <button>Submit</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact</h1>
+        <nav>
+            <a href="../index.html">Home</a> |
+            <a href="../Resume/index.html">Resume</a> |
+            <a href="../projects/index.html">Projects</a> |
+            <a href="../contact/index.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <p>Use the form below to open your email client with the message content filled in.</p>
+        <form action="mailto:eyang435@gmail.com" method="POST" enctype="text/plain">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="subject">Subject:</label><br>
+            <input id="subject" name="subject"><br>
+            <label for="body">Body:</label><br>
+            <textarea id="body" name="body"></textarea><br>
+            <button>Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p><a href="../index.html">Back to Home</a></p>
+    </footer>
+</body>
+</html>

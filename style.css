@@ -3,7 +3,8 @@
 }
 
 body {
-  margin-inline: max(1em, (100% - 100ch) / 2);
+  margin-inline: 0;  /* Remove centering margins for full width */
+  padding-inline: 1em;  /* Optional: Add padding for readability on small screens */
   font: 100%/1.5 system-ui;
   text-decoration: none;
   accent-color: var(--color-accent);

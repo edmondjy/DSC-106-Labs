@@ -206,3 +206,125 @@ path.selected {
 path {
   cursor: pointer;
 }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  text-align: center;
+  gap: 1.5em;
+  margin-block: 2em;
+  padding: 1.5em;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.stats dt {
+  grid-row: 1;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  color: var(--color-accent);
+}
+
+.stats dd {
+  grid-row: 2;
+  margin: 0;
+  font-size: 2em;
+}
+
+.gridlines line {
+  stroke: oklch(50% 0% 0 / 20%); 
+  stroke-dasharray: 4 2; 
+}
+
+.gridlines .domain {
+  display: none; 
+}
+
+dl.info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5em 1em;
+  margin: 0;
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+dl.info dt {
+  color: #666;
+  font-weight: normal;
+}
+
+dl.info dd {
+  margin: 0;
+  font-weight: bold;
+}
+
+.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  background-color: rgba(255, 255, 255, 0.85); 
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
+  border-radius: 8px;
+  padding: 1em;
+  pointer-events: none; 
+}
+
+@media (prefers-color-scheme: dark) {
+  .tooltip {
+    background-color: rgba(30, 30, 30, 0.85);
+  }
+}
+
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
+
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8; 
+  }
+}
+
+.selection {
+  fill-opacity: 0.1;
+  stroke: black;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
+
+circle.selected {
+  fill: #ff6b6b; 
+}
+
+#language-breakdown {
+  border: none;
+  padding: 0;
+  margin-top: 2em;
+}
+
+#language-breakdown dt {
+  color: inherit; 
+  font-size: 1.5em; 
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+#language-breakdown dd {
+  font-size: 1.5em; 
+  font-weight: normal; 
+}

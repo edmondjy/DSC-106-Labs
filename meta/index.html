@@ -15,11 +15,19 @@
     <main>
         <div id="stats"></div>
 
-        <h2>Commits by time of day</h2>
-        <div id="chart"></div>
+        <div id="scrolly-1">
+            <div id="scatter-story">
+                </div>
+            
+            <div id="scatter-plot">
+                <h2>Commits by time of day</h2>
+                <div id="chart"></div>
+                <dl id="language-breakdown" class="stats"></dl>
+            </div>
+        </div>
         
-        <p id="selection-count">No commits selected</p>
-        <dl id="language-breakdown" class="stats"></dl>
+        <h2>Codebase Size and Technologies</h2>
+        <dl id="files"></dl>
     </main>
 
     <dl id="commit-tooltip" class="info tooltip" hidden>
